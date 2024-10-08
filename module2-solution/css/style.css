@@ -1,1 +1,76 @@
+* {
+    box-sizing: border-box;
+}
 
+.container {
+    width: 100%;
+}
+
+.row {
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.nav {
+    text-align: center;
+}
+
+.row > div, .nav {
+    float:left;
+    padding: 7px;
+}
+
+.row > div > div {
+    border: 2px solid black;
+    padding: 5px;
+    position: relative;
+}
+
+/* For mobile */
+.col-mobile-12 {width: 100%}
+.col-tablet-6 {width: 100%}
+.col-tablet-12 {width: 100%}
+.col-desktop-4 {width: 100%}
+
+/* For table */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-tablet-6 {width: 50%}
+    .col-tablet-12 {width: 100%}
+}
+
+/* For desktop */
+@media (min-width: 992px) {
+    .col-desktop-4 { width: 33%; } 
+}
+
+div.title {
+    position: absolute;
+    width: 140px;
+    right: 0px;
+    top: 0px;
+    border-color: black;
+    border-style: solid;
+    border-width: 0px 0px 2px 2px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    float: right;
+}
+
+div.content {
+    padding-top: 30px;
+}
+
+.bgcolor-1 {
+   background-color: rgb(213, 152, 152)
+}
+
+.bgcolor-2 {
+    background-color: rgb(193, 69, 67) 
+ }
+
+ .bgcolor-3 {
+    background-color: rgb(229, 209, 152); 
+ }
